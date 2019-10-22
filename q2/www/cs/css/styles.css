@@ -1,0 +1,267 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Quicksand, sans-serif;
+
+}
+
+/*Top Bar*/
+nav{
+  width: 100%;
+  height: 70px;
+  background-color: #33003b;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+/*"Design University" design*/
+nav p a{
+  font-family: Quicksand, sans-serif;
+  color: seashell;
+  font-size: 40px;
+  line-height: 70px;
+  float: left;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+
+
+nav p a:hover{
+  font-family: Quicksand, sans-serif;
+  text-decoration: none;
+  color: #99003b;
+}
+/*format of the top bar*/
+nav ul {
+  float:left;
+}
+/*format of dropdown menu removing bullets*/
+nav ul li {
+  font-family: Quicksand, sans-serif;
+  float:left;
+  list-style: none;
+  position: relative;
+}
+/*font formatting of dropdown menu*/
+nav ul li a{
+  display: block;
+  color: seashell;
+  font-size: 18px;
+  padding: 22px 14px;
+  text-decoration: none;
+  text-align: left;
+  line-height: 35px;
+}
+nav ul li ul a:hover{
+  color: #99003b;
+}
+
+/*dropdown menu*/
+nav ul li ul{
+  display: block;
+  position: absolute;
+  background-color: #33003b;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 0px 0px 10px 10px;
+  opacity: 0.8;
+  position: fixed;
+  z-index: 999;
+}
+/*making dropdown menu round edged*/
+nav ul li ul li {
+  width: 180px;
+  border-radius: 4px;
+}
+/*hovering effects for dropdown menu*/
+nav ul li ul li a{
+  display: none;
+
+}
+nav ul li:hover ul a {
+  display: block;
+
+}
+nav ul li ul li a:hover{
+  background-color: #f3f3f3;
+}
+
+/*headings*/
+.heading h1{
+  text-shadow:
+    -1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.heading-cache h1{
+  font-family: Quicksand, sans-serif;
+  background-color: #33003b;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding: 30px;
+  margin: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+body{
+  background-color: seashell;
+}
+
+.body-cache p{
+  color: black;
+  font-size: 30px;
+  text-align: left;
+  padding: 30px;
+
+}
+
+h2{
+  text-align: center;
+  padding-top: 0px;
+  padding-left: 20px;
+  font-size: 50px;
+}
+.Web {
+  font-size: 24px;
+  color: seashell;
+  padding: 30px;
+  /*margin: 20px;*/
+  background-color: #cc003b;
+  border-radius: 10px;
+  float: left;
+  /*width: 100%;*/
+  margin: 20px;
+  padding-top: 225px;
+  padding-bottom: 225px;
+}
+
+.Web h3{
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.Web a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #222;
+}
+
+
+.Web a:hover{
+  color: seashell;
+}
+.Web p{
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+
+.Machine{
+  font-size: 24px;
+  color: seashell;
+  padding: 30px;
+
+  /*margin: 20px;*/
+  background-color: #cc003b;
+  border-radius: 10px;
+  float: left;
+  /*width: 100%;*/
+  margin: 20px;
+  padding-top: 225px;
+  padding-bottom: 225px;
+}
+
+.Machine h3{
+  font-size: 40px;
+  padding-bottom: 20px;
+
+}
+.Machine a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #222;
+}
+
+.Machine a:hover{
+  color: white;
+}
+
+.Machine p{
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+
+
+/* ------------------ colums*/
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+.left-column-50 {
+  float: left;
+  width: 50%;
+  background: seashell;
+}
+
+.right-column-50 {
+  float: left;
+  width: 50%;
+  background: seashell;
+}
+
+/*
+.middle-column {
+  float: left;
+  width: 33.3%;
+  background: #734576;
+  padding: 20px;
+}
+
+.middle-column img {
+   width: 100%;
+}
+
+.right-column {
+  float: left;
+  padding: 20px;
+  width: 33.3%;
+  background-color: #af85b2;
+}
+
+.right-column img {
+   width: 100%;
+}
+
+/* Clear floats after the columns */
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #fb9bcb;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Stack columns */
+@media (max-width: 600px) {
+  .left-column, .middle-column, .right-column {
+    width: 100%;
+    height: auto;
+  }
+}
